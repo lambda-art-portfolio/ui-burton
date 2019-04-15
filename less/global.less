@@ -9,12 +9,13 @@
   
   html, body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: @main-font-color;
+    color: @font;
+    background-color: @background;
   }
   
   h1, h2, h3, h4, h5 {
-    // font-family: 'Russo One', sans-serif;
-    color: @header-font-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @h1Font;
   }
   
   h2 {
@@ -30,10 +31,11 @@
     line-height: 1.4;
   }
   
-  .container {
-    max-width: 1000px;
+  .homeContainer {
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    background-color: @background;
     
     @media @phone {
       
