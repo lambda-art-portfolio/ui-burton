@@ -289,3 +289,30 @@ footer {
   font-size: 2.5rem;
   width: 60%;
 }
+.aboutContent {
+  width: 80%;
+  margin: 40px auto;
+}
+.aboutContent h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+.aboutContent .teamMembers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutContent .teamMembers .teamMember {
+  height: 350px;
+  width: 350px;
+}
+i {
+  font-size: 4rem;
+  margin: 10px;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
