@@ -2,21 +2,58 @@
     .center;
     height: 100px;
     font-weight: 300;
+    margin-top: 50px;
     h2 {
         margin: 10px 60px;
+        @media @phone {
+            margin: 10px 10px;
+            font-size: 1.8rem;
+        }
+        @media @tablet {
+            margin: 10px 20px;
+            font-size: 2rem;
+        }
+    }
+    @media @phone {
+        margin-top: 10px;
+        // justify-content: space-around;
+    } 
+    
+    @media @tablet {
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+}
+
+header p{
+    @media @phone{
+     margin: 10px auto;   
+    }
+    @media @tablet {
+     margin: 10px auto; 
     }
 }
 
 #headerInfo {
     font-size: 2.5rem;
-    width: 60%;
+    width: 100%;
     .center;
-    margin: 30px;
+    
+    @media @phone {
+        width: 80%;
+        font-size: 2rem;
+        .center;
+    }
+    @media @tablet {
+        width: 80%;
+        font-size: 2rem;
+        .center;
+    }
 }
 
 .headerImgs {
     .center;
-    
+    margin-top: 70px;
     .headerImg {
         margin: 0 15px;
     }
@@ -32,6 +69,15 @@
         margin: 40px 40px 5px auto;
         font-size: 4.5rem;
         font-weight: 300;
+
+        @media @phone {
+            justify-content: center;
+            margin: 10px auto;
+        }
+        @media @tablet {
+            justify-content: center;
+            margin: 10px auto;
+        }
     }
 
     .screenShots {
@@ -40,7 +86,28 @@
         
         .appShot{
             border-radius: 11px;
+            @media @phone {
+                transform: scale(.7);
+            }
+            @media @tablet {
+                transform: scale(.8);
+            }
         }
+    }
+}
+
+#appShot2 {
+    @media @phone {
+        display: none;
+    }
+}
+
+#appShot3 {
+    @media @phone {
+        display: none;
+    }
+    @media @tablet {
+        display: none;
     }
 }
 
@@ -50,5 +117,5 @@
 
 #appInfo {
     font-size: 2.5rem;
-    width: 60%;
+    width: 80%;
 }

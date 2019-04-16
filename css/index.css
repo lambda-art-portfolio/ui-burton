@@ -163,16 +163,25 @@ p {
   margin: 0 auto;
   background-color: #06061C;
 }
+@media (max-width: 800px) {
+  .homeContainer {
+    max-width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .homeContainer {
+    max-width: 500px;
+  }
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 100%;
   height: 170px;
   margin: 0 auto;
-  border-radius: 50px;
   border: 1px solid #1E245E;
-  background-color: #0C0E35;
+  background-color: #06061C;
   flex-direction: column;
 }
 .navbar h1 {
@@ -237,28 +246,90 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    width: 80%;
+  }
+}
 .gist {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
   font-weight: 300;
+  margin-top: 50px;
 }
 .gist h2 {
   margin: 10px 60px;
 }
+@media (max-width: 500px) {
+  .gist h2 {
+    margin: 10px 10px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .gist h2 {
+    margin: 10px 20px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .gist {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .gist {
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  header p {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 800px) {
+  header p {
+    margin: 10px auto;
+  }
+}
 #headerInfo {
   font-size: 2.5rem;
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+}
+@media (max-width: 500px) {
+  #headerInfo {
+    width: 80%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  #headerInfo {
+    width: 80%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .headerImgs {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
 }
 .headerImgs .headerImg {
   margin: 0 15px;
@@ -273,6 +344,18 @@ footer {
   font-size: 4.5rem;
   font-weight: 300;
 }
+@media (max-width: 500px) {
+  .appExample h2 {
+    justify-content: center;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 800px) {
+  .appExample h2 {
+    justify-content: center;
+    margin: 10px auto;
+  }
+}
 .appExample .screenShots {
   display: flex;
   align-items: center;
@@ -282,6 +365,31 @@ footer {
 .appExample .screenShots .appShot {
   border-radius: 11px;
 }
+@media (max-width: 500px) {
+  .appExample .screenShots .appShot {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 800px) {
+  .appExample .screenShots .appShot {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 500px) {
+  #appShot2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #appShot3 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #appShot3 {
+    display: none;
+  }
+}
 .appInfo {
   display: flex;
   align-items: center;
@@ -289,7 +397,7 @@ footer {
 }
 #appInfo {
   font-size: 2.5rem;
-  width: 60%;
+  width: 80%;
 }
 .aboutContent {
   width: 80%;
