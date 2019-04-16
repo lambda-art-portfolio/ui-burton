@@ -1,29 +1,45 @@
 .aboutContent {
-    width: 80%;
+  width: 80%;
+  margin: 40px auto;
+
+  h2 {
+    .center;
     margin: 40px auto;
-    
-    h2 {
-        .center;
-        margin: 40px auto;
-    }
+  }
 
-    .teamMembers {
-        .center;
+  .teamMembers {
+    .center;
+    flex-wrap: wrap;
 
-        .teamMember {
-            
-            height: 350px;
-            width: 350px;
-        }
+    .teamMember {
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+      background-color: @secondaryBackground;
+      .center;
+      flex-direction: column;
     }
+    h3 {
+      font-size: 2rem;
+      margin: 10px;
+    }
+    .role {
+      font-size: 1.8rem;
+      margin: 5px auto;
+    }
+  }
+
+  @media @tablet {
+    width: 100%;
+  }
 }
 
 i {
-    font-size: 4rem;
-    margin: 10px;
+  font-size: 4rem;
+  margin: 5px;
 }
 
 .teamPic {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }

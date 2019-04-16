@@ -1,121 +1,183 @@
 .gist {
-    .center;
-    height: 100px;
-    font-weight: 300;
-    margin-top: 50px;
-    h2 {
-        margin: 10px 60px;
-        @media @phone {
-            margin: 10px 10px;
-            font-size: 1.8rem;
-        }
-        @media @tablet {
-            margin: 10px 20px;
-            font-size: 2rem;
-        }
-    }
-    @media @phone {
-        margin-top: 10px;
-        // justify-content: space-around;
-    } 
+  .center;
+  height: 100px;
+  font-weight: 300;
+  margin-top: 50px;
+  h2 {
+    margin: 10px 60px;
     
     @media @tablet {
-        margin-top: 10px;
-        justify-content: space-around;
+      margin: 10px 20px;
+      font-size: 2rem;
     }
+    @media @phone {
+      margin: 10px 10px;
+      font-size: 1.8rem;
+    }
+  }
+
+  @media @tablet {
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  @media @phone {
+    margin-top: 10px;
+    // justify-content: space-around;
+  }
 }
 
-header p{
-    @media @phone{
-     margin: 10px auto;   
-    }
-    @media @tablet {
-     margin: 10px auto; 
-    }
+header p {
+  @media @smScreen {
+    margin: 10px auto;
+  }
+  @media @tablet {
+    margin: 10px auto;
+  }
+  @media @phone {
+    margin: 10px auto;
+  }
 }
 
 #headerInfo {
-    font-size: 2.5rem;
-    width: 100%;
+  font-size: 2.5rem;
+  width: 100%;
+  .center;
+  
+  @media @smScreen {
+    width: 80%;
+    font-size: 2rem;
     .center;
-    
-    @media @phone {
-        width: 80%;
-        font-size: 2rem;
-        .center;
-    }
-    @media @tablet {
-        width: 80%;
-        font-size: 2rem;
-        .center;
-    }
+  }
+  @media @tablet {
+    width: 80%;
+    font-size: 2rem;
+    .center;
+  }
+  @media @phone {
+    width: 80%;
+    font-size: 2rem;
+    .center;
+  }
 }
 
 .headerImgs {
-    .center;
-    margin-top: 70px;
-    .headerImg {
-        margin: 0 15px;
-    }
-}
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px 10px;
+  
+  .headerImg {
+    margin: 0 10px;
+  }
 
-.appExample {
-    margin: 40px auto;
+  #headerImg1 {
+    height: 300px;
+    width: 400px;
     
-
-    h2 {
-        display: flex;
-        justify-content: right;
-        margin: 40px 40px 5px auto;
-        font-size: 4.5rem;
-        font-weight: 300;
-
-        @media @phone {
-            justify-content: center;
-            margin: 10px auto;
-        }
-        @media @tablet {
-            justify-content: center;
-            margin: 10px auto;
-        }
-    }
-
-    .screenShots {
-        .center;
-        justify-content: space-around;
+    @media @smScreen {
+        transform: scale(.8);
         
-        .appShot{
-            border-radius: 11px;
-            @media @phone {
-                transform: scale(.7);
-            }
-            @media @tablet {
-                transform: scale(.8);
-            }
-        }
     }
+    @media @tablet {
+        transform: scale(.7);
+    }
+    @media @phone{
+        display: none;
+    }
+  }
+  #headerImg2 {
+    height: 400px;
+    width: 300px;
+  }
+  #headerImg3 {
+    height: 300px;
+    width: 400px;
+    
+    @media @smScreen {
+        transform: scale(.8);
+    }
+    @media @tablet {
+        transform: scale(.7);
+    }
+    @media @phone{
+        display: none;
+    }
+  }
+  @media @smScreen {
+    transform: scale(.8);
+    
+}
+@media @tablet {
+    transform: scale(.7);
+}
+@media @phone{
+    display: none;
+}
+}
+.appExample {
+  margin: 40px auto;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 4.5rem;
+    font-weight: 300;
+
+    
+    @media @tablet {
+      justify-content: center;
+      margin: 10px auto;
+    }
+    @media @phone {
+      justify-content: center;
+      margin: 10px auto;
+    }
+  }
+
+  .screenShots {
+    .center;
+    justify-content: space-around;
+
+    .appShot {
+      border-radius: 11px;
+      
+      @media @smScreen {
+        transform: scale(0.7);
+      }
+      @media @tablet {
+        transform: scale(0.8);
+      }
+      @media @phone {
+        transform: scale(0.7);
+      }
+    }
+  }
 }
 
 #appShot2 {
-    @media @phone {
-        display: none;
-    }
+  @media @smScreen {
+    display: none;
+  }
+  @media @phone {
+    display: none;
+  }
 }
 
 #appShot3 {
-    @media @phone {
-        display: none;
-    }
-    @media @tablet {
-        display: none;
-    }
+  @media @tablet {
+    display: none;
+  }
+  @media @phone {
+    display: none;
+  }
 }
 
 .appInfo {
-    .center;
+  .center;
 }
 
 #appInfo {
-    font-size: 2.5rem;
-    width: 80%;
+  font-size: 2.5rem;
+  width: 80%;
 }
