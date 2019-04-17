@@ -38,11 +38,30 @@ header p {
   }
 }
 
+.cta {
+    .center;
+    flex-direction: column;
+
+    button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: @secondaryBackground;
+    margin: 30px auto;
+    color: @font;
+    font-size: 2rem;
+    }
+}
+
+
+
+
 #headerInfo {
   font-size: 2.5rem;
-  width: 80%;
+  width: 55%;
   margin: 0 auto;
   .center;
+  text-justify: newspaper;
   
   @media @smScreen {
     width: 80%;
