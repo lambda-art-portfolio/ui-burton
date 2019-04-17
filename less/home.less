@@ -42,14 +42,21 @@ header p {
     .center;
     flex-direction: column;
 
+    
+
     button {
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
     border-radius: 10px;
     background-color: @secondaryBackground;
     margin: 30px auto;
-    color: @font;
+    color: @azureishwhite;
     font-size: 2rem;
+
+    a {
+      text-decoration: none;
+      color: @azureishwhite;
+    }
     }
 }
 
@@ -200,4 +207,37 @@ header p {
 #appInfo {
   font-size: 2.5rem;
   width: 80%;
+}
+
+
+#fader {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: @background;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fade-out {
+  from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
 }

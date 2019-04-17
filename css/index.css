@@ -317,13 +317,17 @@ footer {
   flex-direction: column;
 }
 .cta button {
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 100px;
   border-radius: 10px;
   background-color: #0c0e35;
   margin: 30px auto;
-  color: #4c5a72;
+  color: #e3ebed;
   font-size: 2rem;
+}
+.cta button a {
+  text-decoration: none;
+  color: #e3ebed;
 }
 #headerInfo {
   font-size: 2.5rem;
@@ -502,6 +506,42 @@ footer {
   font-size: 2.5rem;
   width: 80%;
 }
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: #06061c;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
 .aboutContent {
   width: 80%;
   margin: 40px auto;
@@ -548,4 +588,40 @@ i {
 .teamPic {
   height: 100px;
   width: 100px;
+}
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: #06061c;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
 }

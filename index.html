@@ -7,7 +7,7 @@
 
     <title>Art Portfolio</title>
 
-    <!-- <link href="" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="css/index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400"
@@ -19,9 +19,17 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    
+    <script src="js/index.js"></script>
+    <script src="popper.js"></script>
+    <!-- <script src="https://cdnjs.com/libraries/popper.js"></script> -->
   </head>
 
   <body>
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+    </script>
     <div class="navbar">
       <h1>Art Portfolio</h1>
       <nav>
@@ -43,13 +51,14 @@
         <section class="cta">
           <div class="headerText">
             <p id="headerInfo">
-              Portfolio helps creators and artists document their works and
+              Portfolio helps creators and artists document their progress and
               provides a professional space to showcase completed works. Try our
               app today!
             </p>
           </div>
           <div class="ctaButton">
-            <button>Try Portfolio</button>
+            <!-- <div id="popup">Try it today!</div> -->
+            <button id="cta-button"><a href="https://art-folio.netlify.com/signup">Create your Portfolio</a></button>
           </div>
         </section>
         <!-- end cta section -->
@@ -118,13 +127,17 @@
             temporality mundane domestic objects BioArt post-human.
           </p>
         </div>
-        <!--end app info-->
+        
       </section>
-
+      <!--end app info-->
       <footer>
         <p>Copyright Art Portfolio 2019</p>
       </footer>
     </div>
     <!--end home container-->
   </body>
+  
+  <script>
+    
+  </script>
 </html>
