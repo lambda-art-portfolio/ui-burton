@@ -216,9 +216,14 @@ p {
   color: #e3ebed;
   border-radius: 10px;
 }
+@media (max-width: 1000px) {
+  .navbar nav a {
+    margin: 10px 50px;
+  }
+}
 @media (max-width: 800px) {
   .navbar nav a {
-    margin: 10px 150px;
+    margin: 10px 50px;
   }
 }
 @media (max-width: 500px) {
