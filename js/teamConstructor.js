@@ -2,7 +2,7 @@ class Members {
     constructor(teamMember){
         this.teamMember = teamMember;
         this.name = this.teamMember.querySelector(".name");
-        this.role = this.teamMember.querySelector("role");
+        this.role = this.teamMember.querySelector(".role");
 
     }
 }
