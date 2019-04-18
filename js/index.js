@@ -52,3 +52,7 @@ window.addEventListener('pageshow', function(event){
     var fader = document.getElementById('fader');
     fader.classList.remove('fade-in');
 });
+
+window.addEventListener('devicelight', function(event){
+ console.log(event.value);
+});
