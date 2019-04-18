@@ -6,4 +6,4 @@ Create a landing page with a link to a react app. Create content related to the 
 HTML5, CSS3, Less, Javascript, Node, Yarn, Git Bash, VsCode
 
 * Resources:
-MDN, https://christopheraue.net/design/fading-pages-on-load-and-unload, Lorem Picsum, Artist-Ipsum, unsplash.com
+MDN, https://christopheraue.net/design/fading-pages-on-load-and-unload, Lorem Picsum, Artist-Ipsum, unsplash.com, Google Fonts, Font Awesome
