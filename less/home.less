@@ -89,12 +89,17 @@ header p {
 
 .headerImgs {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   margin: 70px 10px;
   
   .headerImg {
     margin: 0 10px;
+    @media @smScreen {
+      transform: scale(.7);
+      justify-content: space-evenly;
+    }
   }
 
   #headerImg1 {
@@ -102,6 +107,7 @@ header p {
     width: 400px;
     
     @media @smScreen {
+        width: 350px;
         transform: scale(.8);
         
     }
@@ -121,6 +127,7 @@ header p {
     width: 400px;
     
     @media @smScreen {
+        width: 350px;
         transform: scale(.8);
     }
     @media @tablet {
@@ -167,7 +174,8 @@ header p {
     justify-content: space-around;
 
     .appShot {
-      border-radius: 11px;
+      border-radius: 30px;
+      margin: 15px;
       
       @media @smScreen {
         transform: scale(0.7);
